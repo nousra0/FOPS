@@ -1,0 +1,66 @@
+/*--------------------------
+    Video and Counter area
+--------------------------*/
+.video-and-counter-area{
+    padding: 113px 0 105px 0;
+    position: relative;
+    z-index: 0;
+    &:after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url(../img/bg/video-section-bg.png);
+        background-repeat: no-repeat;
+        content: '';
+        width: 100%;
+        height: 850px;
+        z-index: -1;
+    }
+    .video-area-wrapper{
+        margin-bottom: 98px;
+        .img-wrapper{
+            position: relative;
+            img{
+                border-radius: 30px;
+            }
+            .hover{
+                position: absolute;
+                left: 50%; 
+                top: 50%;
+                @include transform(translate(-50%,-50%));
+                .video-play-btn{
+                    color: $base-color;
+                }
+            }
+        }
+    }
+    .single-counterup-item{
+        position: relative;
+        .icon{
+            font-size: 70px;
+            line-height: 70px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            @include apptidy-text-gradient (rgb(0,132,255),rgb(68,86,255), rgb(136,40,255));
+        }
+        .content{
+            padding-left: 90px;
+            .countnum{
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 60px;
+                color: #252a32;
+                font-family: $heading-font;
+                display: block;
+            }
+            .title{
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 600;
+                font-family: $body-font;
+                color: #505b6d;
+            }
+        }
+    }
+}

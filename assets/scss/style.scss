@@ -1,0 +1,75 @@
+/*
+    Css Table of Content
+    --------------------------
+    ** Typography
+    --------------------------
+    ** Global 
+    --------------------------
+    **  Breadcumb Area
+    --------------------------
+    ** Preloader Css
+    --------------------------
+    ** Normalize
+    --------------------------
+    ** Navbar
+    --------------------------
+    ** Header
+    --------------------------
+    ** App Featuers 
+    --------------------------
+    ** Video And Counter 
+    --------------------------
+    ** We Offer Area
+    --------------------------
+    ** How It Works Area
+    --------------------------
+    ** Screenshort Area
+    --------------------------
+    ** Price Plan Area
+    --------------------------
+    ** News Letter Area
+    --------------------------
+    ** Team Member Area
+    --------------------------
+    ** Testimonial Area
+    --------------------------
+    ** Download Area
+    --------------------------
+    ** Contact Area
+    --------------------------
+    ** Sidebar Area
+    --------------------------
+    ** Footer Area
+    --------------------------
+    ** Blog Page
+    --------------------------
+    ** Blog Details Page
+    --------------------------
+
+*/
+
+//=Main scss
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+//=Section scss
+@import "sections/_navbar";
+@import "sections/_header";
+@import "sections/_about";
+@import "sections/_app_features";
+@import "sections/_video_counter";
+@import "sections/_we_offer";
+@import "sections/_how_it_work";
+@import "sections/_screenshort";
+@import "sections/_price_plan";
+@import "sections/_newsletter";
+@import "sections/_team_area";
+@import "sections/_testimonial";
+@import "sections/_download_area";
+@import "sections/_contact";
+@import "sections/_sidebar";
+@import "sections/_footer";
+//=pages scss
+@import "pages/_blog";
+@import "pages/_blog_details";

@@ -1,0 +1,77 @@
+/*------------------------
+    How It Works
+------------------------*/
+.how-it-works{
+    padding: 113px 0 95px 0;
+    // background: #ddd;
+    .img-wrapper{
+        margin-bottom: 100px;
+    }
+    .section-title{
+        .title{
+            margin-bottom: 10px;
+        }
+    }
+    .single-how-it-work{
+        text-align: center;
+        .icon{
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            position: relative;
+            background-color: $base-color;
+            border-radius: 50%;
+            line-height: 120px;
+            font-size: 50px;
+            color: $white;
+            margin-bottom: 33px;
+            &.bg1{
+                background-image: -moz-linear-gradient( 55deg, rgb(117,178,240) 0%, rgb(117,240,148) 100%);
+                background-image: -webkit-linear-gradient( 55deg, rgb(117,178,240) 0%, rgb(117,240,148) 100%);
+                background-image: -ms-linear-gradient( 55deg, rgb(117,178,240) 0%, rgb(117,240,148) 100%);
+                box-shadow: 0px 12px 20px 0px rgba(117, 178, 240, 0.4);
+            }
+            &.bg2{
+                background-image: -moz-linear-gradient( 55deg, rgb(117,117,240) 0%, rgb(117,178,240) 100%);
+                background-image: -webkit-linear-gradient( 55deg, rgb(117,117,240) 0%, rgb(117,178,240) 100%);
+                background-image: -ms-linear-gradient( 55deg, rgb(117,117,240) 0%, rgb(117,178,240) 100%);
+                box-shadow: 0px 12px 20px 0px rgba(117, 117, 240, 0.4);
+            }
+            &.bg3{
+                background-image: -moz-linear-gradient( 55deg, rgb(240,117,199) 0%, rgb(145,145,255) 100%);
+                background-image: -webkit-linear-gradient( 55deg, rgb(240,117,199) 0%, rgb(145,145,255) 100%);
+                background-image: -ms-linear-gradient( 55deg, rgb(240,117,199) 0%, rgb(145,145,255) 100%);
+                box-shadow: 0px 12px 20px 0px rgba(240, 117, 199, 0.4);
+            }
+            .num{
+                position: absolute;
+                display: inline-block;
+                right: -10px;
+                top: 10px;
+                width: 40px;
+                height: 40px;
+                background-color: $white;
+                font-size: 16px;
+                line-height: 40px;
+                font-weight: 600;
+                border-radius: 50%;
+                background-image: -moz-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                background-image: -webkit-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                background-image: -ms-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+            }
+        }
+        .content{
+            .title{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 26px;
+                color: #777777;
+            }
+        }
+    }
+}

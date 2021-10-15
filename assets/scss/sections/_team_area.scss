@@ -1,0 +1,90 @@
+/*-----------------------------
+    Team Member Area
+-----------------------------*/
+.team-member-area{
+    position: relative;
+    padding: 113px 0 120px 0;
+    overflow: hidden;
+    .left-image{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .right-image{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .section-title{
+        .title{
+            margin-bottom: 10px;
+        }
+    }
+    .single-team-member{
+        text-align: center;
+        &:hover{
+            .thumb{
+                border-color: $base-color;
+                img{
+                    @include transform(scale(1));
+                }
+            }
+        }
+        .thumb{
+            display: inline-block;
+            border: 6px solid #eee;
+            border-radius: 50%;
+            @include transition($transition);
+            overflow: hidden;
+            img{
+                border-radius: 50%;
+                padding: 20px;
+                @include transform(scale(1.1));
+                width: 200px;
+                height: 200px;
+                @include transition($transition);
+            }
+            margin-bottom: 33px;
+        }
+        .content{
+            .title{
+                font-size: 24px;
+                line-height: 34px;
+                color: #111705;
+                margin-bottom: 0;
+            }
+            .post{
+                font-size: 14px;
+                line-height: 24px;
+                color: $base-color;
+                text-transform: uppercase;
+            }
+            ul{
+                margin-top: 23px;
+                li{
+                    display: inline-block;
+                    margin: 0 5px;
+                    a{
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #94969a;
+                        text-align: center;
+                        line-height: 40px;
+                        color: #94969a;
+                        @include transition($transition);
+                        &:hover{
+                            box-shadow: 0px 6px 10px 0px rgba(14, 15, 18, 0.2);
+                            background-image: -moz-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                            background-image: -webkit-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                            background-image: -ms-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                            color: $white;
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

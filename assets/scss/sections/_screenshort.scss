@@ -1,0 +1,17 @@
+/*---------------------------
+    Screenshort Area
+--------------------------*/
+.screenshort-area{
+    padding: 113px 0 120px 0;
+    position: relative;
+    z-index: 0;
+    .section-title{
+        .title{
+            margin-bottom: 10px;
+        }
+    }
+    &.screenshort-bg{
+        background-image: url(../img/bg/screenshort-bg.png);
+        background-position: center;
+    }
+}

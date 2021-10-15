@@ -1,0 +1,217 @@
+/*------------------------------
+    Header Area
+------------------------------*/
+ 
+.header-area {
+    padding: 428px 0 313px 0;
+    background-color: $white;
+    position: relative;
+    .right-content-area{
+        position: absolute;
+        bottom: -313px;
+    }
+    &.header-style-six{
+        .header-inner{
+            text-align: center;
+            .video-play-btn{
+                color: $base-color;
+                margin-bottom: 40px;
+            }
+            .title{
+                color: $white;
+            }
+            p{
+                color: #fefefe;
+            }
+        }
+    }
+    &.header-style-five{
+        //have to write code
+        .header-inner{
+            padding-top: 100px;
+            .title{
+                color: $white;
+            }
+            p{
+                color: #fefefe;
+            }
+        }
+    }
+    &.header-style-three{
+        padding: 368px 0 258px 0;
+        overflow: hidden;
+        .header-overlay-image{
+            position: absolute;
+            bottom: -7px;
+            left: 0px;
+            width: 100%;
+            @include transform(scale(1.05));
+            .st0,.st1{
+                fill:$white;
+            }
+        }
+        .header-inner{
+            .title{
+                color: $white;
+            }
+            p{
+                color: #fefefe;
+            }
+        }
+    }
+    &.header-style-four{
+        padding: 435px 0 313px 0;
+        .make-free-trial-area{
+            margin-top: 35px;
+            .free-trail-form{
+                position: relative;
+                max-width: 500px;
+                .form-group{
+                    .form-control{
+                        height: 60px;
+                        border: 2px solid #e6e6e6;
+                    }
+                }
+                .submit-btn{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 60px;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    background-image: -moz-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                    background-image: -webkit-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                    background-image: -ms-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+    &.header-bg{
+        background-color: $white;
+        background-image: url(../img/bg/header-bg.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+    &.header-bg-3{
+        background-color: $white;
+        background-image: url(../img/bg/we-offer-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &.header-bg-2{
+        background-color: $white;
+        background-image: url(../img/bg/header-bg-2.png);
+        background-position: center;
+        background-size: cover;
+        padding: 428px 0 313px 0;
+        .header-inner{
+            .title{
+                color: $white;
+            }
+            p{
+                color: #fefefe;
+            }
+        }
+    }
+    .header-inner {
+        .title {
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 70px;
+            color: #252a32;
+            margin-bottom: 22px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 32px;
+            color: #505b6d;
+            max-width: 520px;
+        }
+        .btn-wrapper {
+            margin-top: 35px;
+            .boxed-btn {
+                margin: 0 10px;
+                border: none;
+                width: 165px;
+                height: 50px;
+                line-height: 45px;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                font-size: 16px;
+                font-weight: 600;
+                border: 2px solid $white;
+                @include gradient-left-right($left,$right);
+                box-shadow: 0px 3px 20px 0px rgba(13, 21, 75, 0.3);
+                @include transition($transition);
+                text-transform: capitalize;
+                &.blank{
+                    background-color: $white;
+                    color: #252a32;
+                    border: 2px solid #505b6d;
+                    @include gradient-left-right(transparent,transparent);
+                    @include transition($transition);
+                    img{
+                        margin-right: 3px;
+                    }
+                    &:hover{
+                        @include gradient-left-right($left,$right);
+                        border-color: $white;
+                        color: $white;
+                    }
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:hover{
+                    @include gradient-left-right(transparent,transparent);
+                    background-color: $white;
+                    color: #505b6d;
+                }
+            }
+        }
+    }
+}
+
+
+.header-form-area{
+    .header-form-inner{
+        background-color: $white;
+        padding: 40px 30px 50px 40px;
+        border-radius: 5px;
+        .title{
+            font-size: 30px;
+            line-height: 40px;
+            color: $heading-color;
+            margin-bottom: 25px;
+        }
+        .form-group{
+            &.textarea{
+                .form-control{
+                    min-height: 140px;
+                    resize: none;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+            .form-control{
+                height: 50px;
+                border: 1px solid #e3e3e3;
+            }
+        }
+        .submit-btn{
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 3px;
+            @include gradient-left-right($left,$right);
+            &:hover{
+                box-shadow: 0px 3px 20px 0px rgba(13, 21, 75, 0.3);
+            }
+        }
+    }
+}

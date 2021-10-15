@@ -1,0 +1,65 @@
+/*------------------------
+ News Letter Area
+------------------------*/
+.newsletter-aera{
+    padding: 115px 0 105px 0;
+    &.newsletter-bg{
+        background-color: #ddd;
+        background-image: url(../img/bg/news-letter-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .newsletter-inner{
+        text-align: center;
+        .subtitle{
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: $heading-font;
+        }
+        .title{
+            color: $white;
+            font-size: 50px;
+            line-height: 60px;
+            font-weight: 700;
+        }
+        //have to write code for this section
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+        }
+        .newsletter-form{
+            position: relative;
+            margin-top: 56px;
+            .form-group{
+                .form-control{
+                    height: 50px;
+                    border-radius: 25px;
+                    padding-right: 200px;
+                    @include placeholder-color(rgba($white,.6));
+                    background-color: #9069c7;
+                    padding-left: 30px;
+                    color: $white;
+                    border: 2px solid rgba($white,.6);
+                }
+            }
+            .submit-btn{
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-radius: 25px;
+                background-image: -moz-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                background-image: -webkit-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                background-image: -ms-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                box-shadow: 0px 3px 20px 0px rgba(13, 21, 75, 0.3);
+                width: 180px;
+                &:hover{
+                    box-shadow: 0px 3px 30px 0px rgba(13, 21, 75, 0.5);
+                }
+            }
+        }
+    }
+}

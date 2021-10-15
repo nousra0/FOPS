@@ -1,0 +1,122 @@
+/*-------------------------
+    We Offer Area
+-------------------------*/
+.we-offer-area{
+    padding: 113px 0 120px 0;
+    background-color: $base-color;
+    background-image: url(../img/bg/we-offer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    .section-title{
+        .title{
+            margin-bottom: 10px;
+        }
+    }
+    .left-content-area{
+        padding-top: 15px;
+        .we-offer-carousel{
+            .single-we-offer{
+                img{
+                    width: auto;
+                }
+            }
+        }
+    }
+    .right-content-area{
+        ul{
+            li{
+                &.active{
+                    .single-we-offer-item{
+                        border-color: $white;
+                            .content{
+                                .title{
+                                    color: $white;
+                                }
+                        }
+                    }
+                }
+                &:last-child{
+                    .single-we-offer-item{
+                        margin-bottom: 0;
+                    }
+                }
+                .single-we-offer-item{
+                position: relative;
+                border: 1px solid rgba($white,.2);
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 30px 30px 25px 30px;
+                @include transition($transition);
+                // min-height: 65px;
+                    &:hover{
+                        border-color: $white;
+                            .content{
+                                .title{
+                                    color: $white;
+                                }
+                        }
+                    }
+                    &.bg1{
+                        .icon{
+                            background-image: -moz-linear-gradient( 55deg, rgb(117,178,240) 0%, rgb(117,240,148) 100%);
+                            background-image: -webkit-linear-gradient( 55deg, rgb(117,178,240) 0%, rgb(117,240,148) 100%);
+                            background-image: -ms-linear-gradient( 55deg, rgb(117,178,240) 0%, rgb(117,240,148) 100%);
+                            box-shadow: 0px 12px 20px 0px rgba(117, 178, 240, 0.4);
+                        }
+                    }
+                    &.bg2{
+                        .icon{
+                            background-image: -moz-linear-gradient( 55deg, rgb(117,117,240) 0%, rgb(117,178,240) 100%);
+                            background-image: -webkit-linear-gradient( 55deg, rgb(117,117,240) 0%, rgb(117,178,240) 100%);
+                            background-image: -ms-linear-gradient( 55deg, rgb(117,117,240) 0%, rgb(117,178,240) 100%);
+                            box-shadow: 0px 12px 20px 0px rgba(117, 117, 240, 0.4);
+                        }
+                    }
+                    &.bg3{
+                        .icon{
+                            background-image: -moz-linear-gradient( 55deg, rgb(178,117,240) 0%, rgb(117,117,240) 100%);
+                            background-image: -webkit-linear-gradient( 55deg, rgb(178,117,240) 0%, rgb(117,117,240) 100%);
+                            background-image: -ms-linear-gradient( 55deg, rgb(178,117,240) 0%, rgb(117,117,240) 100%);
+                            box-shadow: 0px 12px 20px 0px rgba(178, 117, 240, 0.4);
+                        }
+                    }
+                    &.bg4{
+                        .icon{
+                            background-image: -moz-linear-gradient( 55deg, rgb(240,117,199) 0%, rgb(145,145,255) 100%);
+                            background-image: -webkit-linear-gradient( 55deg, rgb(240,117,199) 0%, rgb(145,145,255) 100%);
+                            background-image: -ms-linear-gradient( 55deg, rgb(240,117,199) 0%, rgb(145,145,255) 100%);
+                            box-shadow: 0px 12px 20px 0px rgba(240, 117, 199, 0.4);
+                        }
+                    }
+                    .icon{
+                        position: absolute;
+                        font-size: 36px;
+                        color: $white;
+                        width: 65px;
+                        height: 65px;
+                        background-color: #ddd;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 65px;
+                        min-height: 65px;
+                    }
+                    .content{
+                        padding-left: 85px;
+                        .title{
+                            color: rgba($white,.8);
+                            @include transition($transition);
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #e1dede;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

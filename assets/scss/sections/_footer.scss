@@ -1,0 +1,86 @@
+/*----------------------------
+    Footer Area
+-----------------------------*/
+.footer-area{
+    background-image: -moz-linear-gradient( -4deg, rgb(136,40,255) 28%, rgb(68,86,255) 81%, rgb(0,132,255) 100%);
+    background-image: -webkit-linear-gradient( -4deg, rgb(136,40,255) 28%, rgb(68,86,255) 81%, rgb(0,132,255) 100%);
+    background-image: -ms-linear-gradient( -4deg, rgb(136,40,255) 28%, rgb(68,86,255) 81%, rgb(0,132,255) 100%);
+    .footer-top{
+        padding: 92px 0 84px 0;
+        .footer-widget{
+            .widget-title{
+                font-size: 24px;
+                line-height: 34px;
+                color: $white;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            .menu{
+                li{
+                    display: block;
+                    border-bottom: 2px dotted rgba($white,.4);
+                    padding: 10px 0;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    a{
+                        color: #f1f1f1;
+                        @include transition($transition);
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .footer-bottom{
+        
+        .copyright-area{
+            border-top: 1px solid rgba($white,.4);
+            padding: 30px 0;
+            .left-content-area{
+                display: inline-block;
+                color: #f2f2f2;
+                margin-top: 10px;
+            }
+            .right-content-area{
+                display: inline-block;
+                float: right;
+                .social-icon{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        display: inline-block;
+                        margin: 0 5px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        a{
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            border: 1px solid rgba($white,.4);
+                            color: rgba($white,.6);
+                            text-align: center;
+                            line-height: 40px;
+                            // @include transition($transition);
+                            &:hover{
+                                background-image: -moz-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                                background-image: -webkit-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                                background-image: -ms-linear-gradient(-4deg, #0084ff 0%, #4456ff 44%, #8828ff 100%);
+                                box-shadow: 0px 6px 10px 0px rgba(14, 15, 18, 0.2);
+                                border: transparent;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

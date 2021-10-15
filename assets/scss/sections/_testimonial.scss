@@ -1,0 +1,90 @@
+/*------------------------
+    Testimonial area
+------------------------*/
+.testimonial-area{
+    padding: 113px 0 110px 0;
+    position: relative;
+    z-index: 0;
+    &:after{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(../img/bg/testimonial-bg.png);
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
+    .section-title{
+        margin-bottom: 52px;
+        .title{
+            margin-bottom: 23px;
+        }
+    }
+    .testimonial-carousel{
+        .owl-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            @include translateX(-50%);
+            div{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 5px;
+                border: 1px solid #8e9088;
+                border-radius: 50%;
+                &.active{
+                    background-image: -moz-linear-gradient( -34deg, rgb(136,40,255) 28%, rgb(68,86,255) 81%, rgb(0,132,255) 100%);
+                    background-image: -webkit-linear-gradient( -34deg, rgb(136,40,255) 28%, rgb(68,86,255) 81%, rgb(0,132,255) 100%);
+                    background-image: -ms-linear-gradient( -34deg, rgb(136,40,255) 28%, rgb(68,86,255) 81%, rgb(0,132,255) 100%);
+                    box-shadow: 0px 6px 10px 0px rgba(14, 15, 18, 0.2);
+                }
+            }
+        }
+        .single-testimonial-item{
+            background-color: $white;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(15, 121, 255, 0.3);
+            position: relative;
+            margin: 55px 10px 10px 10px;
+            .thumb{
+                position: absolute;
+                left: 50%;
+                top: -50px;
+                @include transform(translateX(-50%));
+                img{
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px 0px rgba(15, 121, 255, 0.3);
+                }
+            }
+            .content{
+                padding: 72px 80px 50px 80px; 
+                .author-name{
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                .post{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    line-height: 24px;
+                    color: $base-color;
+                    margin-bottom: 15px;
+                    display: block;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #505b6d;
+                }
+            }
+        }
+    }
+}

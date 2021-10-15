@@ -1,0 +1,92 @@
+/*-------------------------
+    Price Plan
+-------------------------*/
+.pricing-plan-area{
+    position: relative;
+    padding: 113px 0 118px 0;
+    .right-image{
+        position: absolute;
+        right: 0;
+        bottom: 120px;
+    }
+    .single-price-plan{
+        border: 2px solid #929498;
+        text-align: center;
+        &:hover{
+            @include  gradient-border($left,$right);
+            .price-footer{
+                .boxed-btn{
+                        background-image: -moz-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                        background-image: -webkit-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                        background-image: -ms-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                        color: $white;
+                        border-color: transparent;
+                }
+            }
+        }
+        .price-header{
+            padding: 25px 0 17px 0;
+            .title{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $base-color;
+            }
+        }
+        .price-area{
+            margin: 0 25px;
+            border-top: 1px solid #eaece6;
+            border-bottom: 1px solid #eaece6;
+            padding: 18px 0 20px 0;
+            .dollar{
+                font-size: 24px;
+                line-height: 34px;
+                position: relative;
+                top: -18px;
+                color: #252a32;
+            }
+            .price{
+                font-size: 50px;
+                line-height: 60px;
+                font-weight: 600;
+                color: #252a32;
+            }
+            .month{
+                font-size: 24px;
+                line-height: 34px;
+                text-transform: uppercase;
+                color: #252a32;
+                font-weight: 600;
+            }
+        }
+        .price-body{
+            padding: 18px 0 20px 0;
+            border-bottom: 1px solid #eaece6;
+            ul{
+                li{
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #505b6d;
+                    margin: 15px 0;
+                }
+            }
+        }
+        .price-footer{
+            padding: 30px 0 30px 0;
+            .boxed-btn{
+                border-radius: 30px;
+                width: 170px;
+                background-color: transparent;
+                border: 1px solid #929498;
+                color: #252a32;
+                &:hover{
+                    background-image: -moz-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                    background-image: -webkit-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                    background-image: -ms-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                    color: $white;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

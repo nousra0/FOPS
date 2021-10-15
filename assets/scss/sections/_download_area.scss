@@ -1,0 +1,48 @@
+/*--------------------------
+    Download Area
+--------------------------*/
+.download-area{
+    padding: 113px 0 118px 0;
+    position: relative;
+    .bottom-bg-image{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .section-title{
+        margin-bottom: 100px;
+        .title{
+            margin-bottom: 22px;
+        }
+        .btn-wrapper{
+            margin-top: 55px;
+            .boxed-btn{
+                width: 165px;
+                margin: 0 10px;
+                background-image: -moz-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                background-image: -webkit-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                background-image: -ms-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                box-shadow: 0px 3px 20px 0px rgba(13, 21, 75, 0.3);
+                &:hover{
+                    background-image: unset;
+                   background-color: $white;
+                   color: $base-color;
+                   box-sizing: border-box;
+                }
+                &.blank{
+                    background-image: unset;
+                    border: 1px solid rgba($white,.6);
+                    &:hover{
+                        background-image: -moz-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                        background-image: -webkit-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                        background-image: -ms-linear-gradient( -4deg, rgb(0,132,255) 0%, rgb(68,86,255) 44%, rgb(136,40,255) 100%);
+                        box-shadow: 0px 3px 20px 0px rgba(13, 21, 75, 0.3);
+                        border-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
